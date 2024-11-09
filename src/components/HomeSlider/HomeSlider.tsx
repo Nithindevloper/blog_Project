@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -43,8 +45,6 @@ export default function HomeSlider() {
           <Image
             src={img1}
             alt="Slider Image 1"
-            layout="fill"
-              objectFit="cover"
             className="h-full object-fit w-full"
           />
         </SwiperSlide>
@@ -53,8 +53,6 @@ export default function HomeSlider() {
           <Image
             src={img2}
             alt="Slider Image 2"
-            layout="fill"
-              objectFit="cover"
             className="h-full object-fit w-full"
           />
         </SwiperSlide>
@@ -63,8 +61,6 @@ export default function HomeSlider() {
           <Image
             src={img3}
             alt="Slider Image 3"
-            layout="fill"
-            objectFit="cover"
             className="h-full object-fit w-full"
           />
         </SwiperSlide>
@@ -72,8 +68,6 @@ export default function HomeSlider() {
           <Image
             src={img4}
             alt="Slider Image 4"
-            layout="fill"
-            objectFit="cover"
             className="h-full object-fit w-full"
           />
         </SwiperSlide>
@@ -82,8 +76,6 @@ export default function HomeSlider() {
           <Image
             src={img5}
             alt="Slider Image 5"
-            layout="fill"
-            objectFit="cover"
             className="h-full object-fit w-full"
           />
         </SwiperSlide>

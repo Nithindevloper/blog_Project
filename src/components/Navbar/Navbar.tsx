@@ -15,9 +15,14 @@ import Image from "next/image";
 const Navbar = () => {
   const dispatch = useDispatch();
 
-  const handleOpenModal = () => {
-    dispatch(openModal());
+  const handleOpenSignin = () => {
+    dispatch(openModal("signin"));
   };
+
+  const handleOpenSignup = () => {
+    dispatch(openModal("signup"));
+  };
+
 
   return (
     <nav className="flex w-full p-[10px] bg-slate-200 justify-between items-center">
@@ -57,11 +62,10 @@ const Navbar = () => {
             <Link href="/pages/profile">Profile</Link>
           </li>
         </ul>
-        <FaUserPlus
-          onClick={() => dispatch(openModal())}
-          className="cursor-pointer text-2xl text-blue-500"
-        />
-        <Modal />
+        
+        <button onClick={handleOpenSignin} className="cursor-pointer text-blue-500">Sign In</button>
+      <button onClick={handleOpenSignup} className="cursor-pointer text-blue-500">Sign Up</button>
+       <Modal />
       </div>
     </nav>
   );

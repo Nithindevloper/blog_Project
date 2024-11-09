@@ -1,5 +1,4 @@
 "use client";
-
 import CategoriesSlider from "@/components/Categories/CategoriesSlider";
 import HomeSlider from "@/components/HomeSlider/HomeSlider";
 import LatestCategorySlider from "@/components/LatestCategories/LatestCategorySlider";

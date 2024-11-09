@@ -1,3 +1,6 @@
+"use client";
+
+
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
@@ -15,9 +18,7 @@ const CategoryCard = (data: CategoryCardProps) => {
       <Image
         src={image}
         alt={title}
-        width={500}
-        height={300}
-        className="object-cover"
+       
       />
       <h3
         className="text-center text-[12px] pt-2 pb-2 md:text-[15px] lg:text-[18px]"
